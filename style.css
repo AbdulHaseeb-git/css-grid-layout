@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    background-color: rgb(99, 98, 98);
+
+}
+img{
+    max-width: 100%;
+}
+.btn{
+    background-color: rgb(21, 21, 21);
+    color: white;
+    width: fit-content;
+    padding: 5px 5px;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+}
+.btn:hover{
+    cursor: pointer;
+    border: 2px solid white;
+}
+body{
+    margin: 30px 50px;
+    display: grid;
+    grid-gap: 20px;
+
+}
+header{
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    color: black;
+}
+header div{
+    font-weight: bold;
+    padding:5px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    transition: all 1s;
+}
+header div:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid  white;
+}
+
+
+/* main starts here  */
+main .webPresence{
+    grid-area: presence;
+    min-height: 400px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    gap: 20px;
+    font-family: sans-serif;
+    transition: all 1s;
+}
+main .webPresence:hover{
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-position: start;
+}
+main .webPresence h1{
+    font-size: 3rem;
+}
+main .webBox1{
+    grid-area: webBox1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    padding: 20px;
+    background-color: grey;
+    transition: all 1s;
+}
+main .webBox1:hover{
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+main .webBox2{
+    grid-area: webBox2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: grey;
+    transition: all 1s;
+}
+main .webBox2:hover{
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+main .webPresenceBox{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "presence presence webBox1"
+    "presence presence webBox2";
+}
+main .price{
+    font-size: 2.5rem;
+    color: white;
+}
+
+main .center{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+    grid-gap: 20px;
+    background-color: white;
+    transition: background-color 1s;
+}
+main .center .box{
+    background: #fff;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+main .center:hover{
+    background-color: black;
+}
+
+
+/* topend  */
+.topend{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+    place-items: center;
+}
+.topendleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+  }
+  
+  .topendleft img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .topendright{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+/* downend   */
+.downend{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.downend img{
+    object-fit: cover;
+    object-position: center;
+}
+
+/* footer    */
+footer{
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
